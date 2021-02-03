@@ -5,9 +5,10 @@ var colors = getColors(num);
 var squares = document.querySelectorAll(".square")
 var span = document.querySelector("span");
 var demo = document.querySelector("#demo");
-var reset = document.querySelector("#reset button")
+var reset = document.querySelector("#reset")
 var cntr0 = document.querySelector("#container0")
 var pickedColor = pickColor();
+easy.style.background="yellow";
 span.innerHTML = pickedColor;
 var i = 0;
 for (i = 0; i < colors.length; i++) {
@@ -28,6 +29,7 @@ for (i = 0; i < colors.length; i++) {
     })
 }
 reset.addEventListener("click", function(){
+    easy.style.background="yellow";
     cntr0.style.background = "#232323"
     colors = getColors(num);
     pickedColor = pickColor();
@@ -41,10 +43,14 @@ reset.addEventListener("click", function(){
     }
 })
 easy.addEventListener("click", function () {
+    easy.style.background="yellow";
+    hard.style.background="wheat";
     var num = 3;
     resets(num);
 })
 hard.addEventListener("click", function () {
+    hard.style.background="yellow";
+    easy.style.background="wheat";
     var num = 6;
     resets(num);
 })

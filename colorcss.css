@@ -19,48 +19,53 @@ span{
     font-size: 40px;
 }
 #container01{
-    padding:5px;
+    margin-left:0px;
     width: 100%;
-    background-color:darkmagenta;
+    height:26px;
+    background-color:wheat;
+    display:inline-flex;
 }
 #reset{
-    height:10px;
-    width: 20%;
-    margin-left:20%;
-    border:5px red;
-    text-align: left;
-    float: left;
+    font-family:sans-serif;
+    font-size:15px;
+    background: wheat;
+    padding:4px;
+    margin-left:400px;
+    border:none;
+}
+#reset:hover{
+    background: yellow;
 }
 #demo{
-    font-family: cursive;
+    padding-top:0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left:100px;
     width: 20%;
-    margin-right:10%;
-    margin-left:2% ;
-    text-align: center;
-    color: azure;
-    float: left;
 }
 #hard{
-    float:left;
-    color: azure;
-    margin-right: 10px;
-}
-#hard:active{
-    color:black;
-    background-color: wheat;
-    text-decoration: none;
-    padding-top: 4px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: wheat;
+    padding:4px;
+    border: none;
+
 }
 #hard:hover{
-    color:yellow;
-    background-color: teal;
-    text-decoration: none;
-    padding-top: 4px;
+    background-color: yellow;
 }
 #easy{
-    color: azure;
-    margin:0px;
-    text-align:center;
+    font-size: 15px;
+    font-family: sans-serif;
+    background: wheat;
+    border-style: none;
+    padding:4px;
+}
+#easy:hover{
+    background: yellow;
+}
+#easy:active{
+    background: yellow;
 }
 .square{
     background: #232323;
