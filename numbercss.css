@@ -1,0 +1,33 @@
+html { 
+    font-family: cursive; 
+    } 
+      
+body { 
+    background-color: #232323;
+    width: 50%; 
+    max-width: 800px; 
+    min-width: 480px; 
+    margin: 0 auto; 
+    }
+    h1{
+        color: chartreuse;
+        font-size: 70px;
+    }
+    p{
+        font-size: 50px;
+        color: burlywood;
+    }
+    input{
+        padding:4px;
+        background-color: bisque;
+        color:blue;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    label{
+        font-size: 20px;
+        color: cyan;
+    }
+    #submitguess:hover{
+        background-color: yellow;
+    }

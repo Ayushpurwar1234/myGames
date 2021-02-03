@@ -1,0 +1,29 @@
+body{
+    background: burlywood;
+}
+#container{
+    margin-left:40%;
+    margin-top: 10%
+}
+a:link {
+    color: black;
+    font-family: cursive;
+    font-size: 50px;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }

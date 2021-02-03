@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>alphabate guessing game</title>
+    <style>
+        html{
+            font-family: cursive;
+        }
+        body{
+            background: #232323;
+        }
+        h1{
+            font-size: 60px;
+            color:yellowgreen
+        }
+        p{
+            color:wheat;
+            font-size: 40px;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="gameOver"><div>
+    <h1>Alphabet Guesssing Game</h1>
+    <p>Select An Alphabet from your Key Board</p>
+    <p></p>
+    <p>Remaining chances:  <span id="chance">5</span></p>   
+</div>
+    <script>
+        var alphabets = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+            'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        var count = 5;
+        var chance=document.querySelector("#chance");
+        var gameOver=document.querySelector("#gameOver")
+        var computerChoice = alphabets[Math.floor(Math.random() * alphabets.length)]
+        console.log(computerChoice)
+            document.onkeypress = function (event) {
+                var userKey = event.key;
+                console.log(userKey)
+                if(count>1){
+                if (userKey === computerChoice) {
+                    document.querySelectorAll("p")[2].innerHTML="Success!!You got the correct alphabet";
+                    document.querySelectorAll("p")[1].innerHTML="WRONG!! Select Another!!";
+                    count=0;
+                }
+                else {
+                    document.querySelectorAll("p")[1].innerHTML="WRONG!! Select Another!!";
+                    count--;
+                    chance.innerHTML=count;
+                }
+            }
+                else{
+                    gameOver.innerHTML="GAME OVER!!!!";
+                    gameOver.style.fontSize="80px";
+                    gameOver.style.color="purple";
+                    gameOver.style.textAlign="center";
+                    gameOver.style.marginTop="20%"
+                    
+                }
+            }
+    </script>
+</body>
+
+</html>
